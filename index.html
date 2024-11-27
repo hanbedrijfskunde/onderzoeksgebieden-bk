@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Onderzoeksvragen</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+        <style>        
+            .exo-2-font {
+                font-family: "Exo 2", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .bg-blue { background-color: #8993FA;}
+        </style>
+    </head>    
+<body class="bg-gray-100 p-6">
+    <div class="container mx-auto">
+        <section id="didactische-visie" class="flex items-center justify-center h-screen bg-yellow-300">
+            <h1 class="text-8xl text-center text-gray-800 exo-2-font">Onderzoek <br>=<br>Leren<br>=<br> Onderwijs</h1>
+        </section>
+        <section id="ontwerp-regel1" class="flex items-center justify-center h-screen bg-blue">
+            <h1 class="text-8xl text-center text-white exo-2-font tracking-widest">Keep It Simple Stupid</h1>
+        </section>
+        <section id=onderzoeks-vragen" class="my-10">
+            <h1 class="text-2xl font-bold mb-6 text-center">Onderzoeksvragen per maatschappelijk thema en leerjaar</h1>
+            <div class="overflow-x-auto">
+                <table class="table-auto border-collapse border border-gray-300 w-full text-sm">
+                    <thead>
+                        <tr class="bg-gray-200">
+                            <th class="border border-gray-300 px-4 py-2">Maatschappelijk thema</th>
+                            <th class="border border-gray-300 px-4 py-2">Jaar 1</th>
+                            <th class="border border-gray-300 px-4 py-2">Jaar 2</th>
+                            <th class="border border-gray-300 px-4 py-2">Jaar 3</th>
+                            <th class="border border-gray-300 px-4 py-2">Jaar 4</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data-table-body">
+                        <!-- Data rows will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
