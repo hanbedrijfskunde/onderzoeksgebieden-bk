@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Onderzoeksvragen</title>
         <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
         <style>        
@@ -15,23 +16,54 @@
                 font-weight: 400;
                 font-style: normal;
             }
-            .bg-blue { background-color: #8993FA;}
+            .bg-cobalt { background-color: #1446A0; }
+            .bg-yello { background-color: #F5D647; }
+            .bg-onyx { background-color: #3C3C3B; }
+            .bg-tulip { background-color: #DB3069; }
+            .bg-smoky {background-color: #EBEBD3;}
         </style>
     </head>    
 <body class="bg-gray-100 p-6">
     <div class="container mx-auto">
-        <section id="didactische-visie" class="flex items-center justify-center h-screen bg-yellow-300">
-            <h1 class="text-8xl text-center text-gray-800 exo-2-font">Onderzoek <br>=<br>Leren<br>=<br> Onderwijs</h1>
+        <!-- Slide 1 -->
+        <section id="didactische-visie" class="relative flex items-center justify-center h-screen overflow-hidden bg-yello">
+            <!-- Up Arrow (optional on first slide) -->
+            <h1 class="text-8xl text-center text-gray-800 exo-2-font">
+                Onderzoek <br>=<br>Leren<br>=<br>Onderwijs
+            </h1>
+            <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white bg-gray-700/10 rounded-full p-2 hover:bg-gray-600 arrow-down">
+              <i class="fas fa-chevron-down"></i>
+            </button>
         </section>
-        <section id="onderzoeks-themas" class="relative h-screen bg-cover bg-center flex items-center justify-center">
-            <div class="absolute inset-0 bg-black bg-opacity-65"></div>
+        <!-- Slide 2 -->
+        <section id="onderzoeks-themas" class="relative h-screen overflow-hidden bg-cover bg-center flex items-center justify-center" style="background-image: url('images/global-challenges.png');">
+            <button class="absolute top-4 left-1/2 transform -translate-x-1/2 text-white bg-gray-700/10 rounded-full p-2 hover:bg-gray-600 arrow-up">
+              <i class="fas fa-chevron-up"></i>
+            </button>
+            <!-- Content for slide 2 goes here -->
+            <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white bg-gray-700/10 rounded-full p-2 hover:bg-gray-600 arrow-down">
+              <i class="fas fa-chevron-down"></i>
+            </button>
+        </section>
+        <!-- Slide 3 -->
+        <section id="onderzoeks-vragen" class="relative flex items-center justify-center h-screen overflow-hidden bg-onyx">
+            <button class="absolute top-4 left-1/2 transform -translate-x-1/2 text-white bg-gray-700/10 rounded-full p-2 hover:bg-gray-600 arrow-up">
+              <i class="fas fa-chevron-up"></i>
+            </button>
             <div id="question-container" class="relative z-10 max-w-4xl mx-auto text-center px-4">
                 <p id="random-question" class="text-7xl font-bold text-white exo-2-font leading-relaxed transition-opacity duration-1000">
                     <!-- Questions will be populated by JavaScript -->
                 </p>
             </div>
+            <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white bg-gray-700/10 rounded-full p-2 hover:bg-gray-600 arrow-down">
+              <i class="fas fa-chevron-down"></i>
+            </button>
         </section>
-        <section id=onderzoeks-vragen" class="my-10">
+        <!-- Slide 4: Table of research questions (renamed id for uniqueness) -->
+        <section id="onderzoeks-vragen-table" class="relative h-screen overflow-hidden bg-gray-100">
+            <button class="absolute top-4 left-1/2 transform -translate-x-1/2 text-white bg-gray-700/10 rounded-full p-2 hover:bg-gray-600 arrow-up">
+              <i class="fas fa-chevron-up"></i>
+            </button>
             <h1 class="text-2xl font-bold mb-6 text-center">Onderzoeksvragen per maatschappelijk thema en leerjaar</h1>
             <div class="overflow-x-auto">
                 <table class="table-auto border-collapse border border-gray-300 w-full text-sm">
@@ -49,10 +81,46 @@
                     </tbody>
                 </table>
             </div>
+            <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white bg-gray-700/10 rounded-full p-2 hover:bg-gray-600 arrow-down">
+              <i class="fas fa-chevron-down"></i>
+            </button>
         </section>
-        <section id="ontwerp-regel1" class="flex items-center justify-center h-screen bg-blue">
+        <!-- Slide 5 -->
+        <section id="ontwerp-regel1" class="relative flex items-center justify-center h-screen overflow-hidden bg-cobalt">
+            <button class="absolute top-4 left-1/2 transform -translate-x-1/2 text-white bg-gray-700/10 rounded-full p-2 hover:bg-gray-600 arrow-up">
+              <i class="fas fa-chevron-up"></i>
+            </button>
             <h1 class="text-8xl text-center text-white exo-2-font tracking-widest">Keep It Simple Stupid</h1>
+            <button class="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white bg-gray-700/10 rounded-full p-2 hover:bg-gray-600 arrow-down">
+                <i class="fas fa-chevron-down"></i>
+            </button>
         </section>
+        <!-- Slide 6 -->
+        <section id="ontwerp-manifesto" class="relative flex flex-col p-6  items-center justify-center h-screen bg-smoky">
+            <button class="absolute top-4 left-1/2 transform -translate-x-1/2 text-white bg-gray-700/10 rounded-full p-2 hover:bg-gray-600 arrow-up">
+                <i class="fas fa-chevron-up"></i>
+            </button>
+            <h1 class="text-6xl font-bold mb-14 exo-2-font text-center">Agile Education Manifesto</h1>
+            <div class="w-full max-w-5xl grid grid-cols-12 gap-6 items-center">
+                <div class="col-span-5 bg-orange-500 text-white px-6 py-6 rounded-lg font-semibold exo-2-font text-2xl text-center">Studenten en docenten</div>
+                <div class="col-span-2 text-xl font-bold exo-2-font text-center">Boven</div>
+                <div class="col-span-5 bg-green-500 text-white px-6 py-6 rounded-lg font-semibold exo-2-font text-2xl text-center">Regels en Reglementen</div>
+                
+                <div class="col-span-5 bg-orange-500 text-white px-6 py-6 rounded-lg font-semibold exo-2-font text-2xl text-center">Waardevolle professionals</div>
+                <div class="col-span-2 text-xl font-bold exo-2-font text-center">Boven</div>
+                <div class="col-span-5 bg-green-500 text-white px-6 py-6 rounded-lg font-semibold exo-2-font text-2xl text-center">Toetsing en systemen</div>
+                
+                <div class="col-span-5 bg-orange-500 text-white px-6 py-6 rounded-lg font-semibold exo-2-font text-2xl text-center">Samenwerking driehoek</div>
+                <div class="col-span-2 text-xl font-bold exo-2-font text-center">Boven</div>
+                <div class="col-span-5 bg-green-500 text-white px-6 py-6 rounded-lg font-semibold exo-2-font text-2xl text-center">Organisatie en procedures</div>
+                
+                <div class="col-span-5 bg-orange-500 text-white px-6 py-6 rounded-lg font-semibold exo-2-font text-2xl text-center">Inspelen op verandering</div>
+                <div class="col-span-2 text-xl font-bold exo-2-font text-center">Boven</div>
+                <div class="col-span-5 bg-green-500 text-white px-6 py-6 rounded-lg font-semibold exo-2-font text-2xl text-center">Vaste programma’s</div>
+            </div>
+        <!-- No button on last slide -->
+        </section>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
