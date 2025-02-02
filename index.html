@@ -37,6 +37,29 @@
       .bg-smoky {
         background-color: #ebebd3;
       }
+      .bg-charly {
+        background-color: #4c4637;
+      }
+      .bg-liver {
+        background-color: #b2ab99;
+      }
+      .bg-azure {
+        background-color: #00f7d5;
+      }
+      .bg-musky {
+        background-color: #00bd9f;
+      }
+      .bg-crisp {
+        background-color: #00dbff;
+      }
+      .bg-bubble {
+        background-color: #ff5da9;
+      }
+      .arrow {
+      fill: none;
+      stroke: #333;
+      stroke-width: 3;
+      }
     </style>
   </head>
   <body class="bg-gray-100 p-6">
@@ -246,6 +269,71 @@
       </section>
 
       <!-- Slide 7 -->
+      <section
+        id="mens-cultuur"
+        class="relative flex items-center justify-center h-screen overflow-hidden bg-crisp"
+      >
+        <button
+          class="absolute top-4 left-1/2 transform -translate-x-1/2 text-white bg-gray-700/10 rounded-full p-2 hover:bg-gray-600 arrow-up"
+        >
+          <i class="fas fa-chevron-up"></i>
+        </button>
+        <svg class="diagram" viewBox="0 0 900 900">
+          <!-- Center circle -->
+          <circle cx="450" cy="450" r="75" fill="white" stroke="black" stroke-width="3"/>
+          <text x="450" y="458" text-anchor="middle" class="text-3xl exo-2-font">Mens</text>
+
+          <!-- Nodes -->
+          <rect x="400" y="655" width="100" height="40" rx="15" fill="white" stroke="black" stroke-width="3"/>
+          <text x="450" y="680" text-anchor="middle" class="exo-2-font">Systemen</text>
+          <rect x="210" y="275" width="100" height="40" rx="15" fill="white" stroke="black" stroke-width="3"/>
+          <text x="260" y="300" text-anchor="middle" class="exo-2-font">Structuur</text>
+          <rect x="600" y="275" width="100" height="40" rx="15" fill="white" stroke="black" stroke-width="3"/>
+          <text x="650" y="300" text-anchor="middle" class="exo-2-font">Cultuur</text>
+
+          <!-- Arrows -->
+          <path d="M 450 525 L 450 650" class="arrow" marker-end="url(#arrowhead)"/> <!--- Down -->
+          <path d="M 398 398 L 310 310" class="arrow" marker-end="url(#arrowhead)"/> <!--- Left -->
+          <path d="M 503 398 L 601 310" class="arrow" marker-end="url(#arrowhead)"/> <!--- Rights -->
+
+          <!-- Arrowhead definition -->
+          <defs>
+            <!-- Normal arrow, for the end -->
+            <marker
+                id="arrowhead"
+                markerWidth="10"
+                markerHeight="7"
+                refX="9"
+                refY="3.5"
+                orient="auto"
+            >
+                <polygon points="0 0, 10 3.5, 0 7" fill="#333"></polygon>
+            </marker>
+
+            <!-- Reversed arrow, for the start -->
+            <marker
+                id="arrowheadStartReversed"
+                markerWidth="10"
+                markerHeight="7"
+                refX="1"
+                refY="3.5"
+                orient="auto"
+            >
+                <!-- Notice we flip the polygon horizontally 
+                    or keep the same polygon but shift refX 
+                    so it points outward. -->
+                <polygon points="10 0, 0 3.5, 10 7" fill="#333"></polygon>
+            </marker>
+          </defs>
+        </svg>
+        <button
+          class="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white bg-gray-700/10 rounded-full p-2 hover:bg-gray-600 arrow-down"
+        >
+          <i class="fas fa-chevron-down"></i>
+        </button>
+      </section>
+
+      <!-- Slide 8 -->
       <section
         id="ontwerp-regel1"
         class="relative flex items-center justify-center h-screen overflow-hidden bg-cobalt"
